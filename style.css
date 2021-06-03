@@ -1,0 +1,508 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  overflow-x: hidden;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background:transparent;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    overflow-x: visible;
+}
+
+.logo{
+    padding: 0 1em;
+}
+
+.logo img{
+width: 100px;
+height: 70px;
+object-fit: cover;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 7em;
+}
+nav li{
+    list-style: none;
+ padding: 2em 0;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding-right:2em;
+    text-transform: uppercase;
+    font-size: 1em;
+    
+}
+nav a:hover{
+    color: rgb(216, 185, 10);
+    letter-spacing: 2px;
+}
+
+.toggle{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.bar{
+    width: 100%;
+    background: #fff;
+    height: 3px;
+}
+
+.home{
+    background: url(/images/pexels-francesco-ungaro-998641.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   overflow-y: hidden;
+    width: 100%;
+    position: relative;
+    top: -5.2em;
+    
+}
+.content{
+    color: #fff;
+    position: relative;
+    top: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5em 6em;
+}
+.title{
+    padding-left: 3em;
+    text-transform: uppercase;
+}
+.title i{
+    position: relative;
+    top: 10px;
+    right: 4em;
+    display: flex;
+    height: 3px;
+    width: 2.5em;
+    background: rgb(216, 185, 10);
+}
+.title h5{
+    color: rgb(216, 185, 10);
+    padding-bottom: 10px;
+}
+.title h3{
+     font-size: 2em;
+     padding-bottom: .5em;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+}
+.links a{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 1em 4em;
+    font-size: .8em;
+    color: #fff;
+    margin-bottom: 3em;
+}
+.links a:hover{
+    border: 1px solid rgb(216, 185, 10);
+    
+}
+#about{
+    
+    color: #000;
+  
+}
+#about h4{
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+}
+#about h5{
+ font-size: 1.5em;
+ text-transform: uppercase;
+ padding: 1em 4em;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.text{
+    width: 700px;
+    padding: 0 4em;
+}
+.text h6{
+    text-transform: uppercase;
+    color: rgb(216, 185, 10);
+    font-size: 1em;
+    padding-bottom: .5em;
+}
+.text p{
+    padding-bottom: 1em;
+}
+.skill{
+    width: 350px;
+    padding: 4em 4em;
+}
+.skill h6{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.button button{
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    color: #000;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-size: 1em;
+    background: #fff;
+}
+#project{
+    background: rgb(235, 232, 232);
+    padding: 1em;
+
+}
+#project h6{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+}
+#project h5{
+    text-transform: uppercase;
+    padding-left: 4em;
+    font-size: 1em;
+    padding: 1em;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.project1{
+    background: #fff;
+    margin: 4em;
+    padding-bottom: 1em;
+    width: 470px;
+}
+.project1 img{
+    width: 280px;
+    height: 250px;
+    object-fit: cover;
+    margin: 3em 6em 1em 6em ;
+    
+}
+.project1 h6{
+    color: rgb(216, 185, 10);
+}
+.project1 p{
+    
+    padding: 0 1em 2em 1em;
+}
+.project1 a{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(216, 185, 10);
+    padding : 1em 12.4em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-family: serif;
+    font-size: 1em;
+}
+.project1 a:hover{
+    border: 1px solid rgb(216, 185, 10);
+    background: transparent;
+    color: #000;
+}
+#contact{
+    background: url(/images/pexels-philippe-donn-1257860.jpg);
+    color: #fff;
+    padding: 3em 0;
+}
+#contact h5{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.contact1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.form{
+    width: 400px;
+    
+    margin-bottom: 2em;
+}
+.form input,.form textarea{
+    width: 100%;
+    background: transparent;
+    padding: 1em ;
+    margin-bottom: 1em;
+    color: #fff;
+    
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(63, 61, 61);
+}
+.form textarea{
+    padding-bottom: 7em;
+    overflow: hidden;
+}
+.form input::placeholder,.form textarea::placeholder{
+    text-transform: uppercase;
+    color: #fff;
+}
+.form button{
+    background: rgb(216, 185, 10);
+    color: #fff;
+    width: 100%;
+    padding: .7em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.form button:hover{
+border: 1px solid rgb(216, 185, 10);
+background: transparent;
+
+}
+.contact{
+    margin-left: 5em;
+    margin-top: 4em;
+}
+.email{
+    padding-bottom: 3em;
+
+}
+.email h6{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+.footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+
+}
+.footer img{
+    height: 200px;
+    width: 200px;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-right: 1em ;
+    padding-left: 1em;
+}
+.git{
+    border-right: 1px solid #fff;
+}
+
+
+@media screen and (max-width:1024px) {
+        .project1{
+              margin: 2em;
+        }
+        .project1 a{
+            
+            padding : 1em 11.2em;
+           
+        }
+    
+}
+@media screen and (max-width:768px){
+
+
+.content{
+    
+    padding: 5em 2em;
+}
+
+
+.text{
+    width: 700px;
+    padding: 0 1em;
+}
+.text p{
+    padding-bottom: 1em;
+}
+.skill{
+    width: 500px;
+    padding: 2em;
+}
+
+.project{
+    flex-direction: column;
+}
+.project1{
+    margin: 2em auto;
+    width: 470px;
+}
+.project1 a{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(216, 185, 10);
+    padding : 1em 12.5em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-family: serif;
+    font-size: 1em;
+}
+.contact1{
+    flex-direction: column;
+    margin-left: 1em;
+}
+.form button{
+    margin-left: 1em;
+}
+}
+@media screen and (max-width:480px){
+.toggle{
+    display: flex;
+}
+nav ul{
+    flex-direction: column;
+    margin-top: 2em;
+    display: none;
+}
+.home{
+    height: 90vh;
+}
+.content{
+  
+    flex-direction: column;
+    padding: 3em 1em;
+}
+
+.title h3{
+     font-size: 1.5em;
+     padding-bottom: .5em;
+}
+.links{
+    
+    flex-direction: column;
+    padding: 2em 2em 0 4em ;
+    
+}
+#about{
+    height: 90vh;
+    
+}
+
+#about h5{
+ font-size: 1.2em;
+ padding: 1em;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+.text{
+    width: 100%;
+    padding: 0 ;
+    margin: 0 1em;
+}
+
+.text p{
+    padding:0 1.3em 1em 1em;
+    
+}
+.skill{
+    width: 100%;
+    padding: 0em;
+    margin: 1em;
+}
+.skill h6{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+#project h5{
+   
+    padding-left: 1em;
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+.project1{
+    margin: 2em auto;
+    width: 298px;
+}
+
+.project1 img{
+    width: 180px;
+    height: 160px;
+    margin: 3em 2em 1em 4em ;
+    
+}
+
+.project1 a{
+    padding : 1em 7.1em;
+}
+
+
+.contact1{
+
+    flex-direction: column;
+}
+.form{
+    width: 300px;
+   margin: 0 1em;
+}
+
+.form button{
+    margin-left: 1em;
+}
+
+
+
+}
