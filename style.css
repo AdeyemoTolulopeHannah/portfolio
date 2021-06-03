@@ -84,7 +84,7 @@ nav a:hover{
     width: 100%;
     position: relative;
     top: -5.2em;
-    
+    background-color: #000;
 }
 .content{
     color: #fff;
@@ -240,6 +240,7 @@ nav a:hover{
 }
 .project1 a{
     text-decoration: none;
+    
     color: #fff;
     background: rgb(216, 185, 10);
     padding : 1em 12.4em;
@@ -388,7 +389,7 @@ background: transparent;
     text-decoration: none;
     color: #fff;
     background: rgb(216, 185, 10);
-    padding : 1em 12.5em;
+    padding : 1em 12.4em;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-family: serif;
@@ -486,7 +487,7 @@ nav ul{
 }
 
 .project1 a{
-    padding : 1em 7.1em;
+    padding : 1em 7em;
 }
 
 
