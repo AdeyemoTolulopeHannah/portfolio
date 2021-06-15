@@ -87,6 +87,7 @@ nav a:hover{
     position: relative;
     top: -5.2em;
     background-color: #000;
+    padding-bottom: 2em;
 }
 .content{
     color: #fff;
@@ -102,9 +103,9 @@ nav a:hover{
     text-transform: uppercase;
 }
 .title i{
-    position: relative;
-    top: 10px;
-    right: 4em;
+    position: absolute;
+    top: 6.4em;
+    left: 6.4em;
     display: flex;
     height: 3px;
     width: 2.5em;
@@ -117,6 +118,10 @@ nav a:hover{
 .title h3{
      font-size: 2em;
      padding-bottom: .5em;
+}
+.title h4{
+    font-size:1.6em ;
+    
 }
 .links{
     display: flex;
@@ -144,14 +149,14 @@ nav a:hover{
   
 }
 #about h4{
-    font-size: 1em;
+    font-size: 1.6em;
     font-family: sans-serif;
     text-align: center;
     padding: 1em;
     text-transform: uppercase;
 }
 #about h5{
- font-size: 1.5em;
+ font-size: 1.2em;
  text-transform: uppercase;
  padding: 1em 4em;
 }
@@ -172,13 +177,14 @@ nav a:hover{
 }
 .text p{
     padding-bottom: 1em;
+    line-height: 1.8em;
 }
 .skill{
     width: 350px;
     padding: 4em 4em;
 }
 .skill h6{
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: uppercase;
     padding-bottom: 1em;
 }
@@ -205,14 +211,14 @@ nav a:hover{
 }
 #project h6{
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-align: center;
     padding: 1em;
 }
 #project h5{
     text-transform: uppercase;
     padding-left: 4em;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 1em;
 }
 .project{
@@ -237,15 +243,17 @@ nav a:hover{
     color: rgb(216, 185, 10);
 }
 .project1 p{
-    
+    line-height: 1.8em;
     padding: 0 1em 2em 1em;
 }
 .project1 a{
     text-decoration: none;
     
+    margin: 1em auto;
     color: #fff;
     background: rgb(216, 185, 10);
-    padding : 1em 12.4em;
+    padding : 1em 199px;
+   
     margin-bottom: 2em;
     text-transform: uppercase;
     font-family: serif;
@@ -260,10 +268,11 @@ nav a:hover{
     background: url(/images/pexels-philippe-donn-1257860.jpg);
     color: #fff;
     padding: 3em 0;
+    background-color: #000;
 }
 #contact h5{
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-align: center;
     padding-bottom: 1em;
 }
@@ -357,6 +366,10 @@ background: transparent;
             padding : 1em 11.2em;
            
         }
+
+        .title i{
+          display: none;
+        }
     
 }
 @media screen and (max-width:768px){
@@ -408,9 +421,15 @@ background: transparent;
 .form button{
     margin-left: 1em;
 }
+.title i{
+    display: none;
+}
 }
 @media screen and (max-width:480px){
 
+.title i{
+    display: none;
+}
 .toggle{
     display: flex;
 }
@@ -439,7 +458,7 @@ nav ul{
     
 }
 #about{
-    height: 90vh;
+    padding-bottom: 1em;
     
 }
 
@@ -511,6 +530,14 @@ nav ul{
     margin-left: 1em;
 }
 
-
+.title i{
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    display: flex;
+    height: 3px;
+    width: 2em;
+    background: rgb(216, 185, 10);
+}
 
 }
