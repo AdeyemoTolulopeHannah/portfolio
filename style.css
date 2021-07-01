@@ -445,6 +445,9 @@ background: transparent;
     width: 280px;
    
 }
+.project1 a{
+    padding: .8em 2em;
+}
 .project1 img{
     width: 180px;
     height: 180px;
