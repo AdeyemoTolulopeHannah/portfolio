@@ -20,7 +20,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background:transparent;
+    background:rgb(2, 0, 10);
     color: #fff;
     position: relative;
     z-index: 10;
@@ -29,23 +29,25 @@ nav{
 }
 
 .logo{
-    padding: 0 1em;
+    padding:  1em;
+    background-color: rgb(2, 0, 10);
 }
 
 .logo img{
 width: 100px;
 height: 70px;
 object-fit: cover;
+background-color: rgb(2, 0, 10);
 }
 nav ul{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding-right: 7em;
+    
 }
 nav li{
     list-style: none;
- padding: 2em 0;
+ padding: 2em 1.5em;
 }
 nav a{
     text-decoration: none;
@@ -61,9 +63,7 @@ nav a:hover{
 }
 
 .toggle{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+   margin: 2.2em 1em 1em 1em;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -78,74 +78,74 @@ nav a:hover{
 }
 
 .home{
-    background: url(/images/pexels-francesco-ungaro-998641.jpg);
-    background-position: center;
+
+    background-position:right;
     background-repeat: no-repeat;
     background-size: cover;
    overflow-y: hidden;
     width: 100%;
-    position: relative;
-    top: -5.2em;
-    background-color: #000;
-    padding-bottom: 2em;
+    background-color: rgb(2, 0, 10);
+    padding-bottom: 3em;
 }
 .content{
     color: #fff;
-    position: relative;
-    top: 6em;
+    margin-top: 1em;
     display: flex;
-    justify-content: space-between;
     align-content: center;
-    padding: 5em 6em;
+    justify-content: space-between;
 }
+.image{
+    background-image: url(./images/mine.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 80vh;
+    width: 600px;
+    background-color: rgba(2, 0, 10,0.9);
+    background-blend-mode: multiply;
+}
+
 .title{
-    padding-left: 3em;
+    padding-left: 5em;
     text-transform: uppercase;
-}
-.title i{
-    position: absolute;
-    top: 6.4em;
-    left: 6.4em;
-    display: flex;
-    height: 3px;
-    width: 2.5em;
-    background: rgb(216, 185, 10);
+    padding-top: 6em;
 }
 .title h5{
-    color: rgb(216, 185, 10);
+    color: rgb(201, 195, 195);
     padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 1.1em;
 }
 .title h3{
-     font-size: 2em;
+     font-size: 3em;
      padding-bottom: .5em;
+     color: #fff;
 }
 .title h4{
-    font-size:1.6em ;
+    font-size:1.3em ;
+    color: rgb(201, 195, 195);
+    text-transform: capitalize;
+    margin-bottom: 3em;
     
 }
-.links{
-    display: flex;
-    flex-direction: column;
-    padding-top: 5em;
-}
-.links a{
+
+.title a{
     font-family: sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
-    background: transparent;
-    border: 1px solid #fff;
-    padding: 1em 4em;
-    font-size: .8em;
-    color: #fff;
+    background:  rgb(177, 151, 4);
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 2em;
+    color: rgb(235, 232, 232);
     margin-bottom: 3em;
 }
-.links a:hover{
-    border: 1px solid rgb(216, 185, 10);
-    
-}
+
 #about{
-    
-    color: #000;
+    background: rgb(4, 2, 12);
+    color: rgb(201, 195, 195);
+    padding-bottom: 2em;
   
 }
 #about h4{
@@ -173,7 +173,7 @@ nav a:hover{
     text-transform: uppercase;
     color: rgb(216, 185, 10);
     font-size: 1em;
-    padding-bottom: .5em;
+    padding-bottom: 1em;
 }
 .text p{
     padding-bottom: 1em;
@@ -181,7 +181,7 @@ nav a:hover{
 }
 .skill{
     width: 350px;
-    padding: 4em 4em;
+    padding: 2em 2em;
 }
 .skill h6{
     font-size: 1.2em;
@@ -198,15 +198,18 @@ nav a:hover{
     padding: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
-    color: #000;
-    border: 1px solid #000;
+    color: rgb(201, 195, 195);
+    border-radius: 4em;
+    border: 1px solid rgb(177, 151, 4);
+    outline: none;
     text-transform: uppercase;
     font-size: 1em;
-    background: #fff;
+    background: transparent;
 }
 #project{
-    background: rgb(235, 232, 232);
+    background: rgb(2, 0, 10);
     padding: 1em;
+    color: rgb(201, 195, 195);
 
 }
 #project h6{
@@ -215,22 +218,20 @@ nav a:hover{
     text-align: center;
     padding: 1em;
 }
-#project h5{
-    text-transform: uppercase;
-    padding-left: 4em;
-    font-size: 1.2em;
-    padding: 1em;
-}
+
 .project{
     display: flex;
     justify-content: center;
     align-content: center;
 }
 .project1{
-    background: #fff;
+    background: rgb(4, 2, 12);
+    box-shadow: 7px 7px 3px rgba(2, 0, 10,0.9);
     margin: 4em;
-    padding-bottom: 1em;
+    padding-bottom: 2.5em;
+    border-radius: 3em;
     width: 470px;
+    text-align: center;
 }
 .project1 img{
     width: 280px;
@@ -252,8 +253,8 @@ nav a:hover{
     margin: 1em auto;
     color: #fff;
     background: rgb(216, 185, 10);
-    padding : 1em 199px;
-   
+    padding : 1em 4em;
+   border-radius: 2em;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-family: serif;
@@ -265,10 +266,10 @@ nav a:hover{
     color: #000;
 }
 #contact{
-    background: url(/images/pexels-philippe-donn-1257860.jpg);
-    color: #fff;
+   
+    color: rgb(201, 195, 195);
     padding: 3em 0;
-    background-color: #000;
+    background-color: rgb(4, 2, 12);
 }
 #contact h5{
     text-transform: uppercase;
@@ -306,7 +307,7 @@ nav a:hover{
     color: #fff;
 }
 .form button{
-    background: rgb(216, 185, 10);
+    background: rgb(177, 151, 4);
     color: #fff;
     width: 100%;
     padding: .7em;
@@ -316,7 +317,7 @@ nav a:hover{
     text-transform: uppercase;
 }
 .form button:hover{
-border: 1px solid rgb(216, 185, 10);
+border: 1px solid rgb(177, 151, 4);
 background: transparent;
 
 }
@@ -334,15 +335,16 @@ background: transparent;
     font-size: 1em;
 }
 .footer{
-    background: #000;
-    color: #fff;
+    background: rgb(2, 0, 10);
+    color: rgb(201, 195, 195);
     text-align: center;
     padding: 2em 0;
 
 }
 .footer img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    padding-bottom: 1em;
 }
 .footer a{
     text-decoration: none;
@@ -358,186 +360,120 @@ background: transparent;
 
 
 @media screen and (max-width:1024px) {
-        .project1{
-              margin: 2em;
+        .image{
+            height: 40vh;
+            width: 500px;
         }
-        .project1 a{
-            
-            padding : 1em 11.2em;
-           
+        .title{
+            padding-top: 8em;
         }
 
-        .title i{
-          display: none;
-        }
+
     
 }
 @media screen and (max-width:768px){
-.home{
-    width: 100%;
-    position: relative;
-    
-}
 
-.content{
-    
-    padding: 5em 2em;
-}
+    .title{
+        padding-top: 4em;
+    }
+    .project{
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
-.text{
-    width: 700px;
-    padding: 0 1em;
-}
-.text p{
-    padding-bottom: 1em;
-}
-.skill{
-    width: 500px;
-    padding: 2em;
-}
 
-.project{
-    flex-direction: column;
-}
-.project1{
-    margin: 2em auto;
-    width: 470px;
-}
-.project1 a{
-    text-decoration: none;
-    color: #fff;
-    background: rgb(216, 185, 10);
-    padding : 1em 12.4em;
-    margin-bottom: 2em;
-    text-transform: uppercase;
-    font-family: serif;
-    font-size: 1em;
-}
-.contact1{
-    flex-direction: column;
-    margin-left: 1em;
-}
-.form button{
-    margin-left: 1em;
-}
-.title i{
-    display: none;
-}
+
+
+
 }
 @media screen and (max-width:480px){
 
-.title i{
+.image{
     display: none;
+}
+.title{
+    padding-top: 3em;
+    height: 100%;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    
+}
+.home{
+    padding-bottom: 3em;
+}
+.title h3{
+    font-size: 2em;
+}
+#about{
+    
+    padding-bottom: 2em;
+  
+}
+#about h4{
+    font-size: 1.6em;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+}
+#about h5{
+ padding: 1em ;
+}
+.about{
+    flex-direction: column;
+}
+.text{
+    width: 100%;
+    padding: 0 2em;
+}
+
+.project1 p{
+
+    padding: 0 1.5em 2em 2.5em;
+    text-align: start;
+}
+.project1 h6{
+    font-size: .8em;
+}
+
+.project1{
+
+    margin: 1em;
+    padding-bottom: 2.5em;
+    border-radius: 3em;
+    width: 280px;
+   
+}
+.project1 img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 3em 6em 1em 6em ;
+    
+}
+.contact1{
+    flex-direction: column;
+}
+.form{
+    width: 250px;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+
+.form button{
+    width: 80%;
 }
 .toggle{
     display: flex;
 }
 nav ul{
+ display: none;
     flex-direction: column;
-    
-    display: none;
-}
-.home{
-    height: 90vh;
-}
-.content{
-  
-    flex-direction: column;
-    padding: 3em 1em;
-}
-
-.title h3{
-     font-size: 1.5em;
-     padding-bottom: .5em;
-}
-.links{
-    
-    flex-direction: column;
-    padding: 2em 2em 0 4em ;
-    
-}
-#about{
-    padding-bottom: 1em;
+    margin-top: 3em;
+    margin-right: 1em;
     
 }
 
-#about h5{
- font-size: 1.2em;
- padding: 1em;
-}
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-direction: column;
-}
-.text{
-    width: 100%;
-    padding: 0 ;
-    margin: 0 1em;
-}
-
-.text p{
-    padding:0 1.3em 1em 1em;
-    
-}
-.skill{
-    width: 100%;
-    padding: 0em;
-    margin: 1em;
-}
-.skill h6{
-    font-size: 1em;
-    text-transform: uppercase;
-    padding-bottom: 1em;
-}
-
-#project h5{
-   
-    padding-left: 1em;
-    font-size: 1em;
-    padding-bottom: 1em;
-}
-
-.project1{
-    margin: 2em auto;
-    width: 298px;
-}
-
-.project1 img{
-    width: 180px;
-    height: 160px;
-    margin: 3em 2em 1em 4em ;
-    
-}
-
-.project1 a{
-    padding : 1em 7em;
-}
-
-
-.contact1{
-
-    flex-direction: column;
-}
-.form{
-    width: 300px;
-   margin: 0 1em;
-}
-
-.form button{
-    margin-left: 1em;
-}
-
-.title i{
-    position: absolute;
-    top: 4em;
-    left: 2em;
-    display: flex;
-    height: 3px;
-    width: 2em;
-    background: rgb(216, 185, 10);
-}
 
 }
